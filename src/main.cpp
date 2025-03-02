@@ -13,12 +13,12 @@ DWORD WINAPI findMinMax(LPVOID lpParam) {
 	minVal = INT_MAX;
 	maxVal = INT_MIN;
 
-	for (size_t i = 0; i < data->size; i++) {
+	for (int i = 0; i < data->size; i++) {
 		if (arr[i] < minVal) {
-			minVal == arr[i];
+			minVal = arr[i];
 		}
 		if (arr[i] > maxVal) {
-			maxVal == arr[i];
+			maxVal = arr[i];
 		}
 		Sleep(7);
 	}
