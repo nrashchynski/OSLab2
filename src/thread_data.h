@@ -1,6 +1,9 @@
 #ifndef THREAD_DATA_H
 #define THREAD_DATA_H
 
+#include <iostream>
+#include <windows.h>
+
 struct ThreadData {
     int* arr;
     int size;
