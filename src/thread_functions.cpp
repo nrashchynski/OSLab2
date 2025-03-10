@@ -13,11 +13,14 @@ DWORD WINAPI findMinMax(LPVOID lpParam) {
 		if (arr[i] < minVal) {
 			minVal = arr[i];
 		}
+		Sleep(7);
 		if (arr[i] > maxVal) {
 			maxVal = arr[i];
 		}
 		Sleep(7);
 	}
+	std::cout << "Минимальный элемент: " << minVal << std::endl;
+	std::cout << "Максимальный элемент: " << maxVal << std::endl;
 	return 0;
 }
 
@@ -26,12 +29,13 @@ DWORD WINAPI calculateAverage(LPVOID lpParam) {
 	int* arr = data->arr;
 	double& avgVal = *data->avgVal;
 
-	int sum = 0;
+	long long sum = 0;
 	for (int i = 0; i < data->size; i++) {
 		sum += arr[i];
 		Sleep(12);
 	}
 	avgVal = (double)sum / data->size;
+	std::cout << "Среднее значение: " << avgVal << std::endl;
 	return 0;
 }
 

@@ -46,9 +46,9 @@ int main() {
 
 		replaceMinMaxWithAverage(arr, size, minVal, maxVal, avgVal);
 
-		std::cout << "Минимальный элемент: " << minVal << std::endl;
-		std::cout << "Максимальный элемент: " << maxVal << std::endl;
-		std::cout << "Среднее значение: " << avgVal << std::endl;
+		/*std::cout << "Минимальный элемент: " << minVal << std::endl;
+		std::cout << "Максимальный элемент: " << maxVal << std::endl;*/
+		/*std::cout << "Среднее значение: " << avgVal << std::endl;*/
 		std::cout << "Обновленный массив: ";
 		for (int i = 0; i < size; i++) {
 			std::cout << arr[i] << " ";
